@@ -16,7 +16,13 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'jsx-loader!transform/cacheable?envify' },
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015', 'react']
+        }
+     },
     ],
     postLoaders: [
       { loader: "transform?brfs" }

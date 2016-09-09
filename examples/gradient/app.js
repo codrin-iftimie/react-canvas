@@ -1,13 +1,10 @@
-/** @jsx React.DOM */
-
-'use strict';
-
 var React = require('react');
 var ReactDOM = require('react-dom');
-var ReactCanvas = require('react-canvas');
 
-var Gradient = ReactCanvas.Gradient;
-var Surface = ReactCanvas.Surface;
+import {Surface, Gradient} from 'react-canvas';
+
+// var Gradient = ReactCanvas.Gradient;
+// var Surface = ReactCanvas.Surface;
 
 var App = React.createClass({
 
